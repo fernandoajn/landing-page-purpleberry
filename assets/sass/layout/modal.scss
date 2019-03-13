@@ -1,0 +1,59 @@
+.modal {
+  background-color: rgba($color: white, $alpha: 0.5);
+  padding: 0;
+}
+
+.modal-content {
+  background-color: $fourthColor;
+  border: 0;
+  padding: 0 2em;
+}
+
+.modal-header {
+  border-bottom: 1px solid $primaryColor;
+}
+
+.modal-title {
+  text-transform: uppercase;
+}
+
+.modal-info {
+  font-size: 1.2em;
+}
+
+.modal-button {
+  font-size: 2em;
+  color: $primaryColor;
+  position: relative;
+  left: 65%;
+
+  @media #{$xs}{
+    display: none;
+  }
+
+  @media #{$sm} {
+    display: none;
+  }
+}
+
+.modal-menu {
+  & > li {
+    display: flex;
+    justify-content: space-between;
+    padding: .3em;
+    border-bottom: 1px solid rgba($color: $primaryColor, $alpha: 0.5);
+  }
+}
+
+.modal-mapa {
+  width: 100%;
+  padding: 0;
+}
+
+.mapa {
+  height: 30em;
+
+  @media #{$xl} {
+    height: 90vh;
+  }
+}

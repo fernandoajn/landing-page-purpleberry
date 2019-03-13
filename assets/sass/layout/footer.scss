@@ -1,0 +1,47 @@
+.footer-purple {
+  background-color: $fourthColor;
+  font-size: $defaultText;
+
+  & a:hover {
+    text-decoration: none;
+    color: $thirdColor;
+  }
+
+  @media #{$xl} {
+    font-size: $defaultText * 1.2;
+  }
+}
+
+.footer-menu {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  
+  @media #{$lg} {
+    text-align: left;
+  }
+
+  @media #{$xl} {
+    text-align: left;
+  }
+}
+
+.footer-tape {
+  background-color: $primaryColor;
+
+}
+
+.tape-text {
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: .2em;
+  font-size: $defaultText;
+
+  & > a{
+    color: white;
+  }
+
+  @media #{$xl} {
+    font-size: $defaultText * 1.2;
+  }
+}

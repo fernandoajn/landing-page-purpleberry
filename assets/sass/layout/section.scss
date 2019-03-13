@@ -1,0 +1,202 @@
+.main-title {
+  font-size: $mainTitle;
+  letter-spacing: .1em;
+  position: relative;
+  z-index: 1000;
+
+  @media #{$xl} {
+    font-size: $mainTitle * 1.4;
+  }
+}
+
+.section-title {
+  font-size: $sectionTitle;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .2em; 
+
+  @media #{$xl} {
+    font-size: $sectionTitle * 1.4;
+  }
+}
+
+.section-sub {
+  display: block;
+  font-size: $sectionTitle * 0.6;
+
+  @media #{$xl} {
+    font-size: $sectionTitle;
+  }
+}
+
+.section-gray {
+  border-top: 2px solid $borderColor;
+  border-bottom: 2px solid $borderColor;
+  background-color: $fifthColor;
+}
+
+.section-p {
+  font-size: $sectionText;
+
+  @media #{$lg} {
+    font-size: $sectionText * 1.1;
+  }
+
+  @media #{$xl} {
+    font-size: $sectionText * 1.4;
+  }
+}
+
+.product-img {
+  width: $sectionTitle * 3.5;
+
+  @media #{$lg} {
+    width: $sectionTitle * 4;
+  }
+
+  @media #{$xl} {
+    width: $sectionTitle * 5;
+  }
+}
+
+.item-img {
+  width: $sectionTitle * 3;
+
+  @media #{$lg} {
+    width: $sectionTitle * 3.5;
+  }
+
+  @media #{$xl} {
+    width: $sectionTitle * 4;
+  }
+}
+
+.section-box {
+  text-align: left;
+  margin: .3em;
+  width: 80%;
+}
+
+.item-title {
+  font-size: $sectionText;
+  letter-spacing: .2em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.menu-sub {
+  font-size: $defaultText * 0.8;
+  text-transform: uppercase;
+  color: $thirdColor;
+
+  @media #{$md} {
+    font-size: $defaultText;
+  }
+  @media #{$lg} {
+    font-size: $defaultText * 1.2;
+  }
+  @media #{$xl} {
+    font-size: $defaultText * 1.2;
+  }
+}
+
+.topping-title {
+  font-size: $sectionText * 0.8;
+  font-weight: 500;
+  letter-spacing: .1em;
+
+  @media #{$lg} {
+    font-size: $sectionText;
+  }
+  @media #{$xl} {
+    font-size: $sectionText;
+  }
+}
+
+.carousel-img {
+  max-width: 80%;
+  
+  @media #{$md} {
+    max-width: 35%;
+  }
+
+  @media #{$lg} {
+    max-width: 45%;
+  }
+
+  @media #{$xl} {
+    max-width: 60%;
+  }
+}
+
+.carousel-img__main {
+  max-width: 100%;
+
+  @media #{$md} {
+    max-width: 80%;
+  }
+  
+  @media #{$lg} {
+    max-width: 75%;
+  }
+
+  @media #{$xl} {
+    max-width: 90%;
+  }
+}
+
+.form-title {
+  font-size: $defaultText * 2;
+  letter-spacing: .2em;
+  display: block;
+}
+
+.contact-form {
+  border-bottom: 1px solid $primaryColor;
+
+  & > input {
+    border: none;
+    outline: 0;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &::placeholder{
+      color: $primaryColor;
+    }
+  }
+}
+
+.div-loja {
+  background: url('../../images/loja.jpg');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-indicators {
+  & li {
+    $sizeIndicator: 6px;
+
+    height: $sizeIndicator;
+    width: $sizeIndicator;
+    border-radius: 50%;
+    border: 2px inset $primaryColor;
+    box-shadow: 0px 0px 3px white;
+    background-color: rgba($color: #fff, $alpha: .8);
+    color: white;
+    opacity: .6;
+  }
+
+  & .active {
+    background-color: rgba($color: white, $alpha: 0);
+  }
+}
+
+.pos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

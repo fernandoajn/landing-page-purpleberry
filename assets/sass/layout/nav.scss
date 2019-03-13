@@ -1,0 +1,74 @@
+.navbar-bg {
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid $borderColor;
+}
+
+.navbar-menu {
+  font-size: $defaultText;
+  font-weight: 500;
+  margin: 0;
+  align-items: center;
+  text-transform: uppercase;
+
+  @media #{$lg} {
+    font-size: $defaultText * 1.1;
+  }
+
+  @media #{$xl} {
+    font-size: $defaultText * 1.3;
+  }
+}
+
+.navbar-toggler {
+
+  &:before {
+    content: "";
+    display: none;
+  }
+}
+
+.item-nav {
+  margin: 0 1em;
+  letter-spacing: .2em;
+}
+
+.link-nav {
+  color: $primaryColor;
+  transition: 0.5s;
+
+  &:hover {
+    text-decoration: none;
+    color: $thirdColor;
+  }
+}
+
+.highlight-item {
+  background-color: $fourthColor;
+  border-radius: 50px;
+  padding: .3em .9em;
+  box-sizing: border-box;
+  letter-spacing: .2em;
+}
+
+.nav-icon {
+  font-size: $defaultText;
+
+
+  @media #{$lg} {
+    font-size: $defaultText * 1.3;
+  }
+  @media #{$xl} {
+    font-size: $defaultText * 1.3;
+  }
+}
+
+.d-none-new {
+  @media screen and (max-width:1400px){
+    display: none;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,24 @@
+@import 'helpers/variables';
+
+html, body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primaryFont;
+  color: $primaryColor;
+}
+
+a {
+  color: $primaryColor;
+}
+
+@import 'layout/nav';
+@import 'layout/section';
+@import 'layout/footer';
+@import 'layout/modal';
+
+
