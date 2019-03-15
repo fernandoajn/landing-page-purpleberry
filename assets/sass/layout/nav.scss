@@ -15,6 +15,10 @@
     font-size: $defaultText * 1.1;
   }
 
+  @media #{$customBreakpoint} {
+    font-size: 1.7vmin;
+  }
+
   @media #{$xl} {
     font-size: $defaultText * 1.3;
   }
